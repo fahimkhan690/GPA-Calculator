@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 GPA Calculator</h1>
+
+    <form id="gpaForm">
+      <div class="subject">
+        <label>Subject 1 Marks:</label>
+        <input type="number" class="marks" min="0" max="100" required>
+      </div>
+      <div class="subject">
+        <label>Subject 2 Marks:</label>
+        <input type="number" class="marks" min="0" max="100" required>
+      </div>
+      <div class="subject">
+        <label>Subject 3 Marks:</label>
+        <input type="number" class="marks" min="0" max="100" required>
+      </div>
+      <div class="subject">
+        <label>Subject 4 Marks:</label>
+        <input type="number" class="marks" min="0" max="100" required>
+      </div>
+      <button type="submit">Calculate GPA</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>GPA: <span id="gpaValue"></span></h2>
+      <p id="grade"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
